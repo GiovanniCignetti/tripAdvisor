@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip advisor 🙂 🙉</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/bb54014cd5.js"></script>
+  </head>
+
+  <body>
+    <header class="container">
+      <i class="fas fa-bars"></i>
+      <div>
+        <img src="./assets/img/logoTrip.svg" alt="" />
+        <input type="text" />
+      </div>
+
+      <nav>
+        <div><i class="fas fa-pen"></i> <span>Avis</span></div>
+        <div><i class="far fa-bell"></i> <span>Alerte</span></div>
+        <div><i class="far fa-heart"></i> <span>Favoris</span></div>
+
+        <button>Connectez-vous</button>
+      </nav>
+      <i class="fas fa-search"></i>
+    </header>
+
+    <main class="container">
+      <h1><span>Explorez</span> Tours</h1>
+
+      <nav class="menu">
+        <div><span>Hôtels</span><i class="fas fa-hotel"></i></div>
+        <div>
+          <span>Location de vacances</span><i class="fas fa-door-open"></i>
+        </div>
+        <div><span>Activités</span><i class="fas fa-hiking"></i></div>
+        <div><span>Restaurants</span><i class="fas fa-utensils"></i></div>
+        <div><span>Forums de voyage</span><i class="far fa-comments"></i></div>
+        <div><span>Vols</span><i class="fas fa-fighter-jet"></i></div>
+        <div><span>Croisière</span><i class="fas fa-ship"></i></div>
+        <div><span>Plus</span><i class="fas fa-ellipsis-h"></i></div>
+      </nav>
+
+      <!-- Pictures -->
+      <div class="pictures">
+        <div class="col-1">
+          <img src="./assets/img/tours-1.jpg" alt="" />
+        </div>
+        <div class="col-2">
+          <img src="./assets/img/tours-2.jpg" alt="" /><img
+            src="./assets/img/tours-3.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="breadcrum">
+        <div>
+          <span
+            ><a href="#">Europe</a> > <a href="#">France</a> >
+            <a href="#">Centre-Val de Loire</a> >
+            <a href="#">Indre-et-Loire</a> > <a href="#">Tours</a>&nbsp;<i
+              class="fas fa-caret-down"
+            ></i>
+          </span>
+        </div>
+        <div>
+          <span>Visiter : Tours </span>
+        </div>
+      </div>
+
+      <nav class="description">
+        <div class="col-1">
+          <h2>Tours : informations</h2>
+          <p>
+            Porte d'entrée sur la vallée de la Loire, Tours possède de nombreux
+            atouts : l'architecture gothique, les places bordées de cafés et les
+            jardins soignés évoquent une atmosphère parisienne, sans la foule,
+            dans cette ville universitaire nichée entre les berges de la Loire
+            et du Cher.
+          </p>
+        </div>
+        <div class="col-2">
+          <div>
+            <h3>Tours : commencez à organiser !</h3>
+            <p>
+              Créez un voyage pour enregistrer et organiser toutes vos idées et
+              les visualiser sur une carte.
+            </p>
+            <button>Créez un voyage</button>
+          </div>
+          <div class="map"></div>
+        </div>
+      </nav>
+
+      <section class="section-1">
+        <h2>Tours : les immanquables</h2>
+
+        <div>
+          <div class="col-1">
+            <h3>Se divertir</h3>
+            <p>
+              Des lieux à voir, des rues à explorer et des expériences
+              emblématiques.
+            </p>
+            <a href="#">Tout afficher</a>
+          </div>
+
+          <!-- Carousel -->
+          <div class="carousel">
+            <!-- Cathédrale Saint-Gatien -->
+            <div class="img-carousel">
+              <div class="photo">
+                <img src="./assets/img/vue-du-musee-des-arts.jpg" alt="" />
+                <div class="circle">
+                  <i class="far fa-heart"></i>
+                </div>
+                <img src="./assets/img/traverlers-choice-2020.png" alt="" />
+              </div>
+              <div class="bottom-carousel">
+                <p class="title">Cathédrale Saint-Gatien</p>
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i>
+                <span>2089</span>
+                <p class="text">Bâtiments architecturaux, Sites historiques</p>
+              </div>
+            </div>
+
+            <!-- Place Plumereau -->
+            <div class="img-carousel">
+              <div class="photo">
+                <img src="./assets/img/place2.jpg" alt="" />
+                <div class="circle">
+                  <i class="far fa-heart"></i>
+                </div>
+                <img src="./assets/img/traverlers-choice-2020.png" alt="" />
+              </div>
+              <div class="bottom-carousel">
+                <p class="title">Place Plumereau</p>
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i>
+                <span>1392</span>
+                <p class="text">Bâtiments architecturaux, Sites historiques</p>
+              </div>
+            </div>
+
+            <!-- Musée du Compagnonnage -->
+            <div class="img-carousel">
+              <div class="photo">
+                <img src="./assets/img/musee-du-compagnonnage.jpg" alt="" />
+                <div class="circle">
+                  <i class="far fa-heart"></i>
+                </div>
+                <img src="./assets/img/traverlers-choice-2020.png" alt="" />
+              </div>
+              <!-- Cathédrale Saint-Gatien -->
+              <div class="bottom-carousel">
+                <p class="title">Musée du Compagnonnage</p>
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i>
+                <span>614</span>
+                <p class="text">Musées spécialisés</p>
+              </div>
+            </div>
+
+            <!-- Jardin Botanique de Tours -->
+            <div class="img-carousel">
+              <div class="photo">
+                <img src="./assets/img/jardin-botanique-de-tours.jpg" alt="" />
+                <div class="circle">
+                  <i class="far fa-heart"></i>
+                </div>
+                <img src="./assets/img/traverlers-choice-2020.png" alt="" />
+              </div>
+              <div class="bottom-carousel">
+                <p class="title">Jardin Botanique de Tours</p>
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i>
+                <span>542</span>
+                <p class="text">Jardins</p>
+              </div>
+            </div>
+
+            <!-- Basilique Saint Martin -->
+            <div class="img-carousel">
+              <div class="photo">
+                <img src="./assets/img/basilique-saint-martin.jpg" alt="" />
+                <div class="circle">
+                  <i class="far fa-heart"></i>
+                </div>
+                <img src="./assets/img/traverlers-choice-2020.png" alt="" />
+              </div>
+              <div class="bottom-carousel">
+                <p class="title">Basilique Saint Martin</p>
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i>
+                <span>478</span>
+                <p class="text">Monuments & Points d'intérêt</p>
+              </div>
+            </div>
+
+            <!-- Hôtel de Ville de Tours -->
+            <div class="img-carousel">
+              <div class="photo">
+                <img src="./assets/img/hotel-de-ville-de-tours.jpg" alt="" />
+                <div class="circle">
+                  <i class="far fa-heart"></i>
+                </div>
+                <img src="./assets/img/traverlers-choice-2020.png" alt="" />
+              </div>
+              <div class="bottom-carousel">
+                <p class="title">Hôtel de Ville de Toursn</p>
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i>
+                <span>443</span>
+                <p class="text">Bâtiments gouvernementaux</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy;2021
+        <a href="https://github.com/GiovanniCignetti/" target="_blank"
+          >Giovanni CIGNETTI</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

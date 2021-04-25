@@ -1,0 +1,523 @@
+/* GLOBAL RULES */
+
+body {
+  font-family: "Trip Sans Reg";
+}
+
+.container {
+  width: 1184px;
+  /* border: black 3px solid; */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Titles */
+h1 {
+  font-size: 50px;
+  font-family: "Trip Sans Med";
+  font-weight: bold;
+  margin-top: 40px;
+}
+h1 span {
+  color: #ff5d5d;
+}
+
+h2 {
+  font-family: "Trip Sans Med";
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-family: "Trip Sans Med";
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 188px;
+  margin-right: 28px;
+}
+
+header input {
+  height: 38px;
+  width: 322px;
+  border-radius: 10px;
+  border-color: lightgrey;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav div {
+  margin-right: 15px;
+}
+
+header nav span {
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+header span,
+header i {
+  font-size: 20px;
+}
+
+header button {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 20px;
+  font-family: inherit;
+}
+
+header .fas.fa-search {
+  display: none;
+}
+
+header .fas.fa-bars {
+  display: none;
+}
+
+/* MAIN */
+
+/* <-- menu --> */
+.menu {
+  margin: 40px 0;
+  display: flex;
+}
+.menu div {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  border: black 2px solid;
+  border-radius: 15px;
+  justify-content: space-between;
+  min-height: 90px;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.menu div:nth-child(7) {
+  display: none;
+}
+
+.menu div:hover {
+  color: white;
+  background-color: black;
+}
+
+.menu span {
+  margin-right: 10px;
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu div:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Pictures */
+.pictures {
+  margin-top: 60px;
+  /* margin-bottom: 600px; */
+  height: 430px;
+  display: flex;
+}
+
+.pictures .col-1 {
+  height: 100%;
+  flex: 1;
+  margin-right: 2px;
+}
+
+.pictures .col-2 {
+  height: 100%;
+  width: 480px;
+}
+
+.pictures .col-1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pictures .col-2 img {
+  height: calc(50% - 1px);
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.pictures .col-2 img:first-child {
+  margin-bottom: 2px;
+}
+
+/* breadscrum */
+.breadcrum {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+/* description */
+.description {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.description .col-1 {
+  height: 100%;
+  width: 50%;
+}
+
+.description .col-2 {
+  height: 100%;
+  width: calc(50% - 100px);
+  margin-left: 100px;
+}
+
+.description .col-1 p {
+  color: #333333;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.description .col-2 div:first-child {
+  background-color: #ff5d5d;
+  height: 274px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.map {
+  height: 190px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.description button {
+  height: 54px;
+  width: 154px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin: 30px 0px;
+}
+
+/* Section 1 */
+
+.section-1 > div {
+  height: 400px;
+  display: flex;
+}
+
+.section-1 > div .col-1 {
+  width: 25%;
+  height: 100%;
+  padding-right: 30px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.section-1 > div .col-1 p {
+  margin-bottom: 20px;
+}
+
+.section-1 > div .col-1 a {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.section-1 > div .carousel {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.section-1 > div .carousel::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.section-1 > div .carousel {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.img-carousel {
+  box-sizing: border-box;
+  height: 100%;
+  width: calc(100% / 3 - (40px / 3));
+  flex-shrink: 0;
+}
+
+.img-carousel:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Parent div en relative avec la grande image */
+.img-carousel .photo {
+  position: relative;
+}
+
+.img-carousel .photo img:nth-child(1) {
+  height: 200px;
+  width: 100%;
+}
+
+.img-carousel .circle {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+}
+
+.img-carousel .photo > img:nth-child(3) {
+  height: 30%;
+  /* width: 30px; */
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.carousel .bottom-carousel .title {
+  font-family: "Trip Sans Med";
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.carousel .bottom-carousel i {
+  font-size: 13px;
+  color: #00aa6c;
+  margin-right: 2px;
+}
+
+.carousel .bottom-carousel span {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #333333;
+}
+
+.carousel .bottom-carousel .text {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Hidden elements */
+.hidden {
+  display: none;
+}
+
+footer {
+  background-color: #faf1ed;
+  height: 80px;
+  margin-top: 40px;
+}
+
+footer p {
+  text-align: center;
+
+  line-height: 80px;
+  margin-bottom: 0;
+}
+/* Media Queries */
+
+@media (max-width: 1184px) {
+  /* MENU */
+  .menu {
+    flex-wrap: wrap;
+  }
+  .menu div {
+    min-width: calc(25% - (60px / 4));
+    min-height: 🈷 70px;
+  }
+
+  .menu div:nth-child(7) {
+    display: inherit;
+  }
+  .menu div:not(:last-child) {
+    margin-right: 0px;
+  }
+  .menu div:not(:nth-child(4n)) {
+    margin-right: 20px;
+  }
+  .menu div:nth-child(1),
+  .menu div:nth-child(2),
+  .menu div:nth-child(3),
+  .menu div:nth-child(4) {
+    margin-bottom: 20px;
+  }
+  .menu span {
+    max-width: 170px;
+  }
+
+  @media (min-width: 1025px) and (max-width: 1328px) {
+    .container {
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    header nav span {
+      display: none;
+    }
+
+    header img {
+      width: 169px;
+    }
+
+    .menu {
+      flex-wrap: wrap;
+    }
+
+    .menu div {
+      margin-top: 10px;
+    }
+
+    .menu div:nth-child(7) {
+      display: block;
+      /* background-color: maroon; */
+    }
+
+    /* main .menu .picture .breadcrum .description {
+    display: none;
+  } */
+  }
+
+  @media (max-width: 767px) {
+    .container {
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    header {
+      display: flex;
+      height: 60px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      width: 169px;
+    }
+    header nav {
+      display: none;
+    }
+
+    header input {
+      display: none;
+    }
+
+    header .fas.fa-search {
+      display: contents;
+    }
+    header .fas.fa-bars {
+      display: contents;
+    }
+
+    .menu {
+      flex-wrap: nowrap;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    .menu nav:nth-child(7) {
+      background-color: rgb(218, 218, 45);
+      display: contents;
+    }
+
+    .col-2 {
+      display: none;
+    }
+
+    .breadcrum {
+      display: none;
+    }
+
+    .description {
+      flex-direction: column;
+    }
+
+    .description div:first-child {
+      width: 100%;
+      margin: 0px 0px 54px;
+      padding: 0px 0px 8px 0px;
+    }
+
+    .description div:last-child {
+      width: 95%;
+    }
+  }
+}
